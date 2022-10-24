@@ -21,9 +21,7 @@
     "url": "https://github.com/NehGuk/environment/issues"
   },
   "homepage": "https://github.com/NehGuk/environment#readme",
-  {
-    "description": "example",
-    "type": "module",
+  "dependencies": {
+    "one-liner-joke": "^1.2.2"
   }
-  
 }
