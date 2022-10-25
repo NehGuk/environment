@@ -1,13 +1,15 @@
 {
   "name": "neh.guk-joker",
-  "version": "0.0.5",
+  "version": "0.0.10",
   "description": "Application that tells jokes",
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "joke": "node src/js/joker.js",
-    "format": "prettier -w src/js/joker.js"
+    "test": "node src/js/joker.test.js",
+    "format": "prettier -w src/**/*.js",
+    "lint": "eslint src/**/*.js",
+    "lint-fix": "eslint src/**/*.js --cache --fix"
+
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
   },
   "homepage": "https://github.com/NehGuk/environment#readme",
   "devDependencies": {
+    "eslint": "^8.26.0",
     "prettier": "^2.7.1"
   },
   "dependencies": {
